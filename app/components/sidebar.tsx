@@ -125,7 +125,7 @@ export function SideBar(props: { className?: string }) {
           内心丰盈，积极行动，人模协同，谁与争锋
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
-          <MoonShotIcon />
+          <ChatGptIcon />
         </div>
       </div>
 
