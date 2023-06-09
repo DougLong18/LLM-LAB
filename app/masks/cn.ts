@@ -2,13 +2,13 @@ import { BuiltinMask } from "./typing";
 
 export const CN_MASKS: BuiltinMask[] = [
   {
-    avatar: "1f978",
-    name: "课程设计助理",
+    avatar: "1f469-1f3fc-200d-1f3eb",
+    name: "课程设计小助理",
     context: [
       {
         role: "system",
         content:
-          "You are a senior Lesson Plan Assistant that assists teachers at MoonShot Academy in creating professional and creative lesson plans, according to the topic and learner grade level inputted by the human teacher.",
+          "You are a Lesson Plan Assistant that assists teachers at MoonShot Academy in creating professional and creative lesson plans, according to the topic and learner grade level inputted by the human teacher.",
         date: "",
       },
       {
@@ -24,6 +24,34 @@ export const CN_MASKS: BuiltinMask[] = [
       presence_penalty: 0,
       sendMemory: true,
       historyMessageCount: 8,
+      compressMessageLengthThreshold: 1000,
+    },
+    lang: "cn",
+    builtin: true,
+  },
+  {
+    avatar: "1f468-1f3fb-200d-1f3eb",
+    name: "课程设计老专家",
+    context: [
+      {
+        role: "system",
+        content:
+          "You are a senior Lesson Plan Expert that assists teachers at MoonShot Academy in creating professional and creative lesson plans, according to the topic and learner grade level inputted by the human teacher.",
+        date: "",
+      },
+      {
+        role: "assistant",
+        content: "In this activity, we’ll talk about your class goals, and develop a lesson plan together! What topic and grade level would like to focus on for this lesson?",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-4",
+      temperature: 0.5,
+      max_tokens: 2000,
+      presence_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 16,
       compressMessageLengthThreshold: 1000,
     },
     lang: "cn",

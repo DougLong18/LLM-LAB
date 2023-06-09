@@ -122,7 +122,7 @@ export function SideBar(props: { className?: string }) {
       <div className={styles["sidebar-header"]}>
         <div className={styles["sidebar-title"]}>探月大模型实验室</div>
         <div className={styles["sidebar-sub-title"]}>
-          内心丰盈，积极行动，人模协同，谁与争锋
+          内心丰盈，积极行动，人模合体，谁与争锋
         </div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />

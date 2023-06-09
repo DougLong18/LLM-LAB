@@ -33,7 +33,7 @@ const jp: LocaleType = {
     Send: "送信",
     Config: {
       Reset: "重置默认",
-      SaveAs: "另存为面具",
+      SaveAs: "另存为角色",
     },
   },
   Export: {
