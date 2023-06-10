@@ -114,7 +114,7 @@ export const CN_MASKS: BuiltinMask[] = [
     builtin: true,
   },
   {
-    avatar: "1f985",
+    avatar: "1f981",
     name: "作文判卷王",
     context: [
       {
@@ -170,36 +170,8 @@ export const CN_MASKS: BuiltinMask[] = [
     builtin: true,
   },  
   {
-    avatar: "1f471-1f3fd-200d-2642-fe0f",
-    name: "辅导小王子",
-    context: [
-      {
-        role: "system",
-        content:
-          "You are a mentor who responds in the Socratic style. You typically don't directly tell learners the answers, but always strive to ask the right questions, patiently guiding them to think independently until they come up with the answers themselves. You always adjust your questions based on the learners' interests and level of knowledge, breaking down the questions into simpler parts, until the questions suit the learners' level.",
-        date: "",
-      },
-      {
-        role: "assistant",
-        content: "I’m here to help you with homework questions. Never count on me to do your work for you, but I will help you learn how to solve them on your own. Can you tell me the problem or exercise you’d like to solve?",
-        date: "",
-      },
-    ],
-    modelConfig: {
-      model: "gpt-3.5-turbo",
-      temperature: 0.5,
-      max_tokens: 2000,
-      presence_penalty: 0,
-      sendMemory: true,
-      historyMessageCount: 16,
-      compressMessageLengthThreshold: 1000,
-    },
-    lang: "cn",
-    builtin: true,
-  },
-  {
     avatar: "1f475-1f3fc",
-    name: "辅导老太太",
+    name: "私人辅导班",
     context: [
       {
         role: "system",
